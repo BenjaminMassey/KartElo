@@ -1,0 +1,406 @@
+{
+    "players": [
+        "sahir",
+        "eacey",
+        "nick",
+        "laura",
+        "insidethepirateship",
+        "sasa7198",
+        "spacemangreg",
+        "thatoneguy",
+        "isaac",
+        "syrah",
+        "bean",
+        "shay",
+        "hthum",
+        "hannahlull",
+        "lyme",
+        "caleb a",
+        "riiillleeey",
+        "team science",
+        "ethanmkmy",
+        "annie",
+        "wyatt",
+        "fun bob",
+        "bm",
+        "bodie",
+        "erika",
+        "paige",
+        "dahlia",
+        "ashton",
+        "calvin w",
+        "natalie"
+    ],
+    "matches": [
+        {
+            "game_type": "free_for_all",
+            "players": [
+                "sahir",
+                "eacey",
+                "nick",
+                "laura"
+            ],
+            "scores": [
+                32,
+                37,
+                60,
+                45
+            ]
+        },
+        {
+            "game_type": "free_for_all",
+            "players": [
+                "insidethepirateship",
+                "sasa7198",
+                "spacemangreg",
+                "thatoneguy"
+            ],
+            "scores": [
+                57,
+                47,
+                33,
+                44
+            ]
+        },
+        {
+            "game_type": "free_for_all",
+            "players": [
+                "isaac",
+                "syrah",
+                "bean",
+                "shay"
+            ],
+            "scores": [
+                50,
+                33,
+                48,
+                49
+            ]
+        },
+        {
+            "game_type": "free_for_all",
+            "players": [
+                "hthum",
+                "hannahlull",
+                "lyme",
+                "caleb a"
+            ],
+            "scores": [
+                54,
+                26,
+                38,
+                51
+            ]
+        },
+        {
+            "game_type": "free_for_all",
+            "players": [
+                "riiillleeey",
+                "team science",
+                "ethanmkmy",
+                "annie"
+            ],
+            "scores": [
+                48,
+                57,
+                37,
+                25
+            ]
+        },
+        {
+            "game_type": "free_for_all",
+            "players": [
+                "wyatt",
+                "fun bob",
+                "bm",
+                "bodie"
+            ],
+            "scores": [
+                38,
+                47,
+                54,
+                33
+            ]
+        },
+        {
+            "game_type": "one_on_one",
+            "players": [
+                "insidethepirateship",
+                "lyme"
+            ],
+            "scores": [
+                1,
+                0
+            ]
+        },
+        {
+            "game_type": "one_on_one",
+            "players": [
+                "nick",
+                "shay"
+            ],
+            "scores": [
+                1,
+                0
+            ]
+        },
+        {
+            "game_type": "one_on_one",
+            "players": [
+                "bm",
+                "thatoneguy"
+            ],
+            "scores": [
+                0,
+                1
+            ]
+        },
+        {
+            "game_type": "one_on_one",
+            "players": [
+                "caleb a",
+                "riiillleeey"
+            ],
+            "scores": [
+                0,
+                1
+            ]
+        },
+        {
+            "game_type": "one_on_one",
+            "players": [
+                "team science",
+                "bean"
+            ],
+            "scores": [
+                1,
+                0
+            ]
+        },
+        {
+            "game_type": "one_on_one",
+            "players": [
+                "hthum",
+                "fun bob"
+            ],
+            "scores": [
+                1,
+                0
+            ]
+        },
+        {
+            "game_type": "one_on_one",
+            "players": [
+                "isaac",
+                "wyatt"
+            ],
+            "scores": [
+                1,
+                0
+            ]
+        },
+        {
+            "game_type": "one_on_one",
+            "players": [
+                "laura",
+                "sasa7198"
+            ],
+            "scores": [
+                0,
+                1
+            ]
+        },
+        {
+            "game_type": "one_on_one",
+            "players": [
+                "insidethepirateship",
+                "nick"
+            ],
+            "scores": [
+                1,
+                0
+            ]
+        },
+        {
+            "game_type": "one_on_one",
+            "players": [
+                "thatoneguy",
+                "riiillleeey"
+            ],
+            "scores": [
+                1,
+                0
+            ]
+        },
+        {
+            "game_type": "one_on_one",
+            "players": [
+                "team science",
+                "hthum"
+            ],
+            "scores": [
+                0,
+                1
+            ]
+        },
+        {
+            "game_type": "one_on_one",
+            "players": [
+                "isaac",
+                "sasa7198"
+            ],
+            "scores": [
+                0,
+                1
+            ]
+        },
+        {
+            "game_type": "one_on_one",
+            "players": [
+                "insidethepirateship",
+                "thatoneguy"
+            ],
+            "scores": [
+                1,
+                0
+            ]
+        },
+        {
+            "game_type": "one_on_one",
+            "players": [
+                "hthum",
+                "isaac"
+            ],
+            "scores": [
+                1,
+                0
+            ]
+        },
+        {
+            "game_type": "one_on_one",
+            "players": [
+                "insidethepirateship",
+                "hthum"
+            ],
+            "scores": [
+                0,
+                1
+            ]
+        },
+        {
+            "game_type": "free_for_all",
+            "players": [
+                "hthum",
+                "bm",
+                "erika"
+            ],
+            "scores": [
+                45,
+                60,
+                30
+            ]
+        },
+        {
+            "game_type": "free_for_all",
+            "players": [
+                "insidethepirateship",
+                "bean",
+                "paige"
+            ],
+            "scores": [
+                60,
+                45,
+                30
+            ]
+        },
+        {
+            "game_type": "free_for_all",
+            "players": [
+                "thatoneguy",
+                "wyatt",
+                "dahlia"
+            ],
+            "scores": [
+                60,
+                30,
+                45
+            ]
+        },
+        {
+            "game_type": "free_for_all",
+            "players": [
+                "ashton",
+                "calvin w",
+                "natalie"
+            ],
+            "scores": [
+                60,
+                45,
+                30
+            ]
+        },
+        {
+            "game_type": "free_for_all",
+            "players": [
+                "bean",
+                "ashton",
+                "bm",
+                "dahlia"
+            ],
+            "scores": [
+                60,
+                45,
+                30,
+                15
+            ]
+        },
+        {
+            "game_type": "free_for_all",
+            "players": [
+                "insidethepirateship",
+                "hthum",
+                "calvin w",
+                "thatoneguy"
+            ],
+            "scores": [
+                60,
+                45,
+                30,
+                15
+            ]
+        },
+        {
+            "game_type": "one_on_one",
+            "players": [
+                "bean",
+                "hthum"
+            ],
+            "scores": [
+                1,
+                0
+            ]
+        },
+        {
+            "game_type": "one_on_one",
+            "players": [
+                "insidethepirateship",
+                "ashton"
+            ],
+            "scores": [
+                1,
+                0
+            ]
+        },
+        {
+            "game_type": "one_on_one",
+            "players": [
+                "insidethepirateship",
+                "bean"
+            ],
+            "scores": [
+                1,
+                0
+            ]
+        }
+    ]
+}
