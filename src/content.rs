@@ -5,7 +5,6 @@ use crate::kart::*;
 
 #[derive(Serialize, Deserialize, Debug)]
 struct Content {
-    players: Vec<String>,
     matches: Vec<Match>,
 }
 
@@ -21,10 +20,12 @@ pub fn load_content(mut players: HashMap<String, f32>) -> HashMap<String, f32> {
     let path = "./content.json";
     let data = fs::read_to_string(path).expect("Unable to read file");
     let res: Content = serde_json::from_str(&data).expect("Unable to parse");
-    for player in &res.players {
-        players.insert(player.to_owned(), 1000f32);
-    }
     for mat in &res.matches {
+        for player in &mat.players {
+            if !players.contains_key(player) {
+                players.insert(player.to_owned(), 1000f32);
+            }
+        }
         if mat.game_type == "one_on_one" {
             players = one_on_one(
                 players,
