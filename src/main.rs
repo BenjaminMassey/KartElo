@@ -6,10 +6,11 @@ use crate::kart::*;
 use crate::content::*;
 
 use std::io;
+use std::collections::HashMap;
 
 fn main() {
 
-    let mut players: Vec<Player> = Vec::new();
+    let mut players: HashMap<String, f32> = HashMap::new();
 
     players = load_content(players);
 
