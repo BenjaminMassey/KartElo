@@ -1,0 +1,31 @@
+body {
+  padding-top: 2%;
+}
+table {
+  border-collapse: collapse;
+}
+td,
+th {
+  padding: 10px 20px;
+}
+th:first-child, td:first-child {
+    color: white;
+	text-align: left;
+}
+th:last-child, td:last-child {
+    font-weight: black;
+	text-align: right;
+}
+.content {
+  max-width: 400px;
+  margin: auto;
+}
+:root {
+  --darkgreen: #46a736;
+  --lightgreen: #8ced7b;
+  --darkblue: #394658;
+  --lightblue: #4e5a6d;
+  --darkgray: #787878;
+  --lightgray: #bebebe;
+  --darkestgray: #373737;
+}
