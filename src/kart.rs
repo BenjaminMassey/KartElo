@@ -21,30 +21,6 @@ pub fn free_for_all(players: &mut HashMap<String, f32>, mut entrants: Vec<(&str,
     }
 }
 
-pub fn one_on_one(
-    mut players: HashMap<String, f32>,
-    player_a_name: &str,
-    player_b_name: &str,
-    player_a_score: f32,
-    player_b_score: f32)
--> HashMap<String, f32> {
-
-    let player_a_ranking = players[player_a_name];
-    let player_b_ranking = players[player_b_name];
-
-    let result = elo(
-        player_a_ranking,
-        player_b_ranking,
-        player_a_score,
-        player_b_score
-    );
-
-    players.insert(player_a_name.to_owned(), result.0);
-    players.insert(player_b_name.to_owned(), result.1);
-
-    players
-}
-
 pub fn display_players(players: &HashMap<String, f32>) {
     let mut sortable: Vec<(&String, &f32)> = players.iter().collect();
     sortable.sort_by(|a, b| (*b.1 as i32).cmp(&(*a.1 as i32)));
