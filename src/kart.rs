@@ -72,7 +72,7 @@ pub fn one_on_one(
 pub fn display_players(players: &HashMap<String, f32>) {
     let mut sortable: Vec<(&String, &f32)> = players.iter().collect();
     sortable.sort_by(|a, b| (*b.1 as i32).cmp(&(*a.1 as i32)));
-    let total_space = longest_player_name(&players) + 2;
+    let total_space = longest_player_name(players) + 2;
     let border = "=".repeat(total_space + 16);
     println!("{}", border);
     for (i, player) in sortable.iter().enumerate() {
