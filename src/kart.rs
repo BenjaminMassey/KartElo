@@ -6,6 +6,7 @@ use ordered_float::NotNan;
 
 // Integration
 
+// Simple Multiplayer Elo http://www.tckerrigan.com/Misc/Multiplayer_Elo/
 pub fn free_for_all(players: &mut HashMap<String, f32>, mut entrants: Vec<(&str, f32)>) {
     entrants.sort_by_key(|e| NotNan::new(e.1).unwrap());
     for i in 1..entrants.len() {
