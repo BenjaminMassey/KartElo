@@ -2,47 +2,23 @@ use crate::elo::*;
 
 use std::collections::HashMap;
 
-#[derive(Clone, PartialEq)]
-pub struct FFAEntrant {
-    player: String,
-    score: f32,
-}
-impl FFAEntrant {
-    pub fn new(player: &str, score: f32) -> Self {
-        FFAEntrant{player: player.to_owned(), score}
-    }
-}
+use ordered_float::NotNan;
 
 // Integration
 
-pub fn free_for_all(mut players: HashMap<String, f32>, entrants: Vec<(&str, f32)>) -> HashMap<String, f32> {
-    let mut entries: Vec<FFAEntrant> = Vec::new();
-    for entrant in &entrants {
-        entries.push(FFAEntrant::new(entrant.0, entrant.1));
+pub fn free_for_all(players: &mut HashMap<String, f32>, mut entrants: Vec<(&str, f32)>) {
+    entrants.sort_by_key(|e| NotNan::new(e.1).unwrap());
+    for i in 1..entrants.len() {
+        let p1 = &entrants[i - 1];
+        let p2 = &entrants[i];
+        let r1 = players[p1.0];
+        let r2 = players[p2.0];
+        let d1 = if p1.1 == p2.1 { 0.5 } else { 0.0 };
+        let d2 = if p1.1 == p2.1 { 0.5 } else { 1.0 };
+        let (s1, s2) = elo(r1, r2, d1, d2);
+        *players.get_mut(p1.0).unwrap() = s1;
+        *players.get_mut(p2.0).unwrap() = s2;
     }
-
-    let mut result: HashMap<String, f32> = HashMap::new();
-    for entry in &entries {
-        let mut ranking = players[&entry.player];
-        for other in &entries {
-            if entry == other {
-                continue;
-            }
-            ranking = elo(
-                ranking,
-                players[&other.player],
-                entry.score / 60f32,
-                other.score / 60f32
-            ).0;
-        }
-        result.insert(entry.player.clone(), ranking);
-    }
-
-    for res in &result {
-        players.insert(res.0.to_owned(), *res.1);
-    }
-
-    players
 }
 
 pub fn one_on_one(
