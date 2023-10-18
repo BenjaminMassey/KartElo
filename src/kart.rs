@@ -4,11 +4,13 @@ use std::collections::HashMap;
 
 use ordered_float::NotNan;
 
-// Integration
-
 // Simple Multiplayer Elo http://www.tckerrigan.com/Misc/Multiplayer_Elo/
-pub fn free_for_all(players: &mut HashMap<String, f32>, mut entrants: Vec<(&str, f32)>) {
-    entrants.sort_by_key(|e| NotNan::new(e.1).unwrap());
+pub fn free_for_all(
+    players: &mut HashMap<String, f32>,
+    mat: &HashMap<String, f32>,
+) {
+    let mut entrants: Vec<_> = mat.iter().collect();
+    entrants.sort_by_key(|e| NotNan::new(*e.1).unwrap());
     for i in 1..entrants.len() {
         let p1 = &entrants[i - 1];
         let p2 = &entrants[i];
