@@ -1,5 +1,6 @@
 use crate::elo::*;
 
+use std::cmp::Reverse;
 use std::collections::HashMap;
 
 use ordered_float::NotNan;
@@ -26,7 +27,7 @@ pub fn free_for_all(
 
 pub fn display_players(players: &HashMap<String, f32>) {
     let mut sortable: Vec<(&String, &f32)> = players.iter().collect();
-    sortable.sort_by(|a, b| (*b.1 as i32).cmp(&(*a.1 as i32)));
+    sortable.sort_by_key(|e| Reverse(NotNan::new(*e.1).unwrap()));
     let total_space = longest_player_name(players) + 2;
     let border = "=".repeat(total_space + 16);
     println!("{}", border);
