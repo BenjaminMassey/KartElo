@@ -6,7 +6,7 @@ use std::collections::HashMap;
 use ordered_float::NotNan;
 
 // Simple Multiplayer Elo http://www.tckerrigan.com/Misc/Multiplayer_Elo/
-pub fn free_for_all(
+pub fn do_match(
     players: &mut HashMap<String, f32>,
     mat: &HashMap<String, f32>,
 ) {

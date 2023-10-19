@@ -14,7 +14,7 @@ pub fn load_content(mut players: HashMap<String, f32>) -> HashMap<String, f32> {
                 players.insert(player.to_owned(), 1000f32);
             }
         }
-        free_for_all(&mut players, mat);
+        do_match(&mut players, mat);
     }
     players
 }
