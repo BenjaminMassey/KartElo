@@ -28,16 +28,26 @@ pub fn do_match(
 pub fn display_players(players: &HashMap<String, f32>) {
     let mut sortable: Vec<(&String, &f32)> = players.iter().collect();
     sortable.sort_by_key(|e| Reverse(NotNan::new(*e.1).unwrap()));
+    let mut last_placement: usize = 0;
+    let mut last_ranking: String = "".to_owned();
     let total_space = longest_player_name(players) + 2;
     let border = "=".repeat(total_space + 16);
     println!("{}", border);
     for (i, player) in sortable.iter().enumerate() {
-        let placement = if (i + 1) > 9 { format!("{} ", i + 1) } else { format!(" {} ", i + 1) };
+        let ranking = if player.1 > &999f32 { format!(" {:.0}", player.1) } else { format!("  {:.0}", player.1) };
+        let placement: usize;
+        if ranking == last_ranking {
+            placement = last_placement;
+        } else {
+            placement = i;
+            last_placement = placement;
+            last_ranking = ranking.clone();
+        }
+        let placement_str = if (placement + 1) > 9 { format!("{} ", placement + 1) } else { format!(" {} ", placement + 1) };
         let my_space: usize = total_space - player.0.len();
         let spacing_before = " ".repeat(my_space / 2);
         let spacing_after = " ".repeat(my_space - (my_space / 2));
-        let ranking = if player.1 > &999f32 { format!(" {:.0}", player.1) } else { format!("  {:.0}", player.1) };
-        println!(" {} - {}{}{} - {}", placement, spacing_before, player.0, spacing_after, ranking);
+        println!(" {} - {}{}{} - {}", placement_str, spacing_before, player.0, spacing_after, ranking);
     }
     println!("{}", border);
 }
