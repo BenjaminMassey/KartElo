@@ -17,8 +17,28 @@ pub fn do_match(
         let p2 = &entrants[i];
         let r1 = players[p1.0];
         let r2 = players[p2.0];
-        let d1 = if p1.1 == p2.1 { 0.5 } else { 0.0 };
-        let d2 = if p1.1 == p2.1 { 0.5 } else { 1.0 };
+        let d1: f32;// = if p1.1 == p2.1 { 0.5 } else { 0.0 };
+        let d2: f32;// = if p1.1 == p2.1 { 0.5 } else { 1.0 };
+        if (0f32..=1f32).contains(&p1.1) && (0f32..=1f32).contains(&p2.1) {
+            d1 = *p1.1; d2 = *p2.1;
+        } else {
+            // Win / Loss Approach (Greater Value)
+            /*
+            d1 = if p1.1 == p2.1 { 0.5 } else { 0.0 };
+            d2 = if p1.1 == p2.1 { 0.5 } else { 1.0 };
+            */
+
+            // Percentage of Max Score Approach
+            d1 = p1.1 / 60f32;
+            d2 = p2.1 / 60f32;
+
+            // Normalize Scores Approach
+            /*
+            let sum = *p1.1 + *p2.1;
+            d1 = p1.1 / sum;
+            d2 = p2.1 / sum;
+            */
+        }
         let (s1, s2) = elo(r1, r2, d1, d2);
         *players.get_mut(p1.0).unwrap() = s1;
         *players.get_mut(p2.0).unwrap() = s2;
