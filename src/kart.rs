@@ -1,78 +1,34 @@
 use crate::elo::*;
 
+use std::cmp::Reverse;
 use std::collections::HashMap;
 
-#[derive(Clone, PartialEq)]
-pub struct FFAEntrant {
-    player: String,
-    score: f32,
-}
-impl FFAEntrant {
-    pub fn new(player: &str, score: f32) -> Self {
-        FFAEntrant{player: player.to_owned(), score}
+use ordered_float::NotNan;
+
+// Simple Multiplayer Elo http://www.tckerrigan.com/Misc/Multiplayer_Elo/
+pub fn free_for_all(
+    players: &mut HashMap<String, f32>,
+    mat: &HashMap<String, f32>,
+) {
+    let mut entrants: Vec<_> = mat.iter().collect();
+    entrants.sort_by_key(|e| NotNan::new(*e.1).unwrap());
+    for i in 1..entrants.len() {
+        let p1 = &entrants[i - 1];
+        let p2 = &entrants[i];
+        let r1 = players[p1.0];
+        let r2 = players[p2.0];
+        let d1 = if p1.1 == p2.1 { 0.5 } else { 0.0 };
+        let d2 = if p1.1 == p2.1 { 0.5 } else { 1.0 };
+        let (s1, s2) = elo(r1, r2, d1, d2);
+        *players.get_mut(p1.0).unwrap() = s1;
+        *players.get_mut(p2.0).unwrap() = s2;
     }
-}
-
-// Integration
-
-pub fn free_for_all(mut players: HashMap<String, f32>, entrants: Vec<(&str, f32)>) -> HashMap<String, f32> {
-    let mut entries: Vec<FFAEntrant> = Vec::new();
-    for entrant in &entrants {
-        entries.push(FFAEntrant::new(entrant.0, entrant.1));
-    }
-
-    let mut result: HashMap<String, f32> = HashMap::new();
-    for entry in &entries {
-        let mut ranking = players[&entry.player];
-        for other in &entries {
-            if entry == other {
-                continue;
-            }
-            ranking = elo(
-                ranking,
-                players[&other.player],
-                entry.score / 60f32,
-                other.score / 60f32
-            ).0;
-        }
-        result.insert(entry.player.clone(), ranking);
-    }
-
-    for res in &result {
-        players.insert(res.0.to_owned(), *res.1);
-    }
-
-    players
-}
-
-pub fn one_on_one(
-    mut players: HashMap<String, f32>,
-    player_a_name: &str,
-    player_b_name: &str,
-    player_a_score: f32,
-    player_b_score: f32)
--> HashMap<String, f32> {
-
-    let player_a_ranking = players[player_a_name];
-    let player_b_ranking = players[player_b_name];
-
-    let result = elo(
-        player_a_ranking,
-        player_b_ranking,
-        player_a_score,
-        player_b_score
-    );
-
-    players.insert(player_a_name.to_owned(), result.0);
-    players.insert(player_b_name.to_owned(), result.1);
-
-    players
 }
 
 pub fn display_players(players: &HashMap<String, f32>) {
     let mut sortable: Vec<(&String, &f32)> = players.iter().collect();
-    sortable.sort_by(|a, b| (*b.1 as i32).cmp(&(*a.1 as i32)));
-    let total_space = longest_player_name(&players) + 2;
+    sortable.sort_by_key(|e| Reverse(NotNan::new(*e.1).unwrap()));
+    let total_space = longest_player_name(players) + 2;
     let border = "=".repeat(total_space + 16);
     println!("{}", border);
     for (i, player) in sortable.iter().enumerate() {

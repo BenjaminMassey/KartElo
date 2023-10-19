@@ -1,7 +1,8 @@
-static K: f32 = 20f32;
+const K: f32 = 20f32;
+const D: f32 = 400f32;
 
 fn expected_elo(rating_a: f32, rating_b: f32) -> f32 {
-    1f32 / (1f32 + f32::powf(10f32, (rating_b - rating_a) / 400f32))
+    1f32 / (1f32 + f32::powf(10f32, (rating_b - rating_a) / D))
 }
 
 pub fn elo(rating_a: f32, rating_b: f32, score_a: f32, score_b: f32) -> (f32, f32) {
