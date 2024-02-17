@@ -1,3 +1,6 @@
+a {
+  text-decoration: none;
+}
 body {
   padding-top: 2%;
 }
@@ -21,7 +24,7 @@ th:last-child, td:last-child {
   margin: auto;
 }
 .github {
-  max-width: 252px;
+  max-width: 262px;
   margin: auto;
   padding: 10px 0px 10px 0px;
   color: white;
