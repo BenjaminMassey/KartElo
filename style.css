@@ -20,6 +20,22 @@ th:last-child, td:last-child {
   max-width: 400px;
   margin: auto;
 }
+.github {
+  max-width: 252px;
+  margin: auto;
+  padding: 10px 0px 10px 0px;
+  color: white;
+}
+.socials {
+  max-width: 166px;
+  margin: auto;
+  padding: 10px 0px 10px 0px;
+}
+.social {
+  width: 32px;
+  height: 32px;
+	padding: 0px 10px 0px 10px;
+}
 :root {
   --darkgreen: #46a736;
   --lightgreen: #8ced7b;

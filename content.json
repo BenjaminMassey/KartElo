@@ -1,232 +1,443 @@
 [
-    {
-        "sahir": 32.0,
-        "eacey": 37.0,
-        "nick": 60.0,
-        "laura": 45.0
-    },
-    {
-        "insidethepirateship": 57.0,
-        "sasa7198": 47.0,
-        "spacemangreg": 33.0,
-        "thatoneguy": 44.0
-    },
-    {
-        "isaac": 50.0,
-        "syrah": 33.0,
-        "bean": 48.0,
-        "shay": 49.0
-    },
-    {
-        "hthum": 54.0,
-        "hannahlull": 26.0,
-        "lyme": 38.0,
-        "caleb a": 51.0
-    },
-    {
-        "riiillleeey": 48.0,
-        "team science": 57.0,
-        "ethanmkmy": 37.0,
-        "annie": 25.0
-    },
-    {
-        "wyatt": 38.0,
-        "fun bob": 47.0,
-        "bm": 54.0,
-        "bodie": 33.0
-    },
-    {
-        "insidethepirateship": 1.0,
-        "lyme": 0.0
-    },
-    {
-        "nick": 1.0,
-        "shay": 0.0
-    },
-    {
-        "bm": 0.0,
-        "thatoneguy": 1.0
-    },
-    {
-        "caleb a": 0.0,
-        "riiillleeey": 1.0
-    },
-    {
-        "team science": 1.0,
-        "bean": 0.0
-    },
-    {
-        "hthum": 1.0,
-        "fun bob": 0.0
-    },
-    {
-        "isaac": 1.0,
-        "wyatt": 0.0
-    },
-    {
-        "laura": 0.0,
-        "sasa7198": 1.0
-    },
-    {
-        "insidethepirateship": 1.0,
-        "nick": 0.0
-    },
-    {
-        "thatoneguy": 1.0,
-        "riiillleeey": 0.0
-    },
-    {
-        "team science": 0.0,
-        "hthum": 1.0
-    },
-    {
-        "isaac": 0.0,
-        "sasa7198": 1.0
-    },
-    {
-        "insidethepirateship": 1.0,
-        "thatoneguy": 0.0
-    },
-    {
-        "hthum": 1.0,
-        "isaac": 0.0
-    },
-    {
-        "insidethepirateship": 0.0,
-        "hthum": 1.0
-    },
-    {
-        "hthum": 45.0,
-        "bm": 60.0,
-        "erika": 30.0
-    },
-    {
-        "insidethepirateship": 60.0,
-        "bean": 45.0,
-        "paige": 30.0
-    },
-    {
-        "thatoneguy": 60.0,
-        "wyatt": 30.0,
-        "dahlia": 45.0
-    },
-    {
-        "ashton": 60.0,
-        "calvin w": 45.0,
-        "natalie": 30.0
-    },
-    {
-        "bean": 60.0,
-        "ashton": 45.0,
-        "bm": 30.0,
-        "dahlia": 15.0
-    },
-    {
-        "insidethepirateship": 60.0,
-        "hthum": 45.0,
-        "calvin w": 30.0,
-        "thatoneguy": 15.0
-    },
-    {
-        "bean": 1.0,
-        "hthum": 0.0
-    },
-    {
-        "insidethepirateship": 1.0,
-        "ashton": 0.0
-    },
-    {
-        "insidethepirateship": 1.0,
-        "bean": 0.0
-    },
-    {
-        "hthum": 60.0,
-        "hannahlull": 40.0,
-        "tilford": 28.0,
-        "alyssa": 4.0
-    },
-    {
-        "jordan": 60.0,
-        "sasa7198": 48.0,
-        "camden": 8.0
-    },
-    {
-        "nick": 60.0,
-        "y it": 4.0,
-        "chase": 28.0
-    },
-    {
-        "bm": 48.0,
-        "lyme": 60.0,
-        "graysun": 40.0,
-        "sophia ": 16.0
-    },
-    {
-        "insidethepirateship": 60.0,
-        "riiillleeey": 48.0,
-        "shay": 40.0,
-        "lia": 28.0
-    },
-    {
-        "bean": 48.0,
-        "isaac": 60.0,
-        "devlyn": 40.0,
-        "jesse": 4.0
-    },
-    {
-        "jordan": 0.0,
-        "shay": 1.0
-    },
-    {
-        "hthum": 1.0,
-        "chase": 0.0
-    },
-    {
-        "bm": 1.0,
-        "riiillleeey": 0.0
-    },
-    {
-        "insidethepirateship": 1.0,
-        "graysun": 0.0
-    },
-    {
-        "lyme": 1.0,
-        "bean": 0.0
-    },
-    {
-        "nick": 1.0,
-        "devlyn": 0.0
-    },
-    {
-        "hannahlull": 0.0,
-        "sasa7198": 1.0
-    },
-    {
-        "shay": 0.0,
-        "hthum": 1.0
-    },
-    {
-        "isaac": 1.0,
-        "bm": 0.0
-    },
-    {
-        "insidethepirateship": 1.0,
-        "lyme": 0.0
-    },
-    {
-        "nick": 1.0,
-        "sasa7198": 0.0
-    },
-    {
-        "hthum": 0.0,
-        "isaac": 1.0
-    },
-    {
-        "insidethepirateship": 1.0,
-        "nick": 0.0
-    },
-    {
-        "isaac": 0.0,
-        "insidethepirateship": 1.0
-    }
+  {
+    "laura": 45.0,
+    "nick": 60.0,
+    "sahir": 32.0,
+    "eacey": 37.0
+  },
+  {
+    "insidethepirateship": 57.0,
+    "sasa7198": 47.0,
+    "thatoneguy": 44.0,
+    "spacemangreg": 33.0
+  },
+  {
+    "bean": 48.0,
+    "shay": 49.0,
+    "syrah": 33.0,
+    "isaac": 50.0
+  },
+  {
+    "hannahlull": 26.0,
+    "lyme": 38.0,
+    "hthum": 54.0,
+    "caleb a": 51.0
+  },
+  {
+    "annie": 25.0,
+    "ethanmkmy": 37.0,
+    "riiillleeey": 48.0,
+    "team science": 57.0
+  },
+  {
+    "wyatt": 38.0,
+    "bm": 54.0,
+    "bodie": 33.0,
+    "fun bob": 47.0
+  },
+  {
+    "insidethepirateship": 1.0,
+    "lyme": 0.0
+  },
+  {
+    "nick": 1.0,
+    "shay": 0.0
+  },
+  {
+    "thatoneguy": 1.0,
+    "bm": 0.0
+  },
+  {
+    "riiillleeey": 1.0,
+    "caleb a": 0.0
+  },
+  {
+    "team science": 1.0,
+    "bean": 0.0
+  },
+  {
+    "hthum": 1.0,
+    "fun bob": 0.0
+  },
+  {
+    "wyatt": 0.0,
+    "isaac": 1.0
+  },
+  {
+    "laura": 0.0,
+    "sasa7198": 1.0
+  },
+  {
+    "insidethepirateship": 1.0,
+    "nick": 0.0
+  },
+  {
+    "riiillleeey": 0.0,
+    "thatoneguy": 1.0
+  },
+  {
+    "hthum": 1.0,
+    "team science": 0.0
+  },
+  {
+    "sasa7198": 0.0,
+    "isaac": 1.0
+  },
+  {
+    "thatoneguy": 0.0,
+    "insidethepirateship": 1.0
+  },
+  {
+    "hthum": 1.0,
+    "isaac": 0.0
+  },
+  {
+    "hthum": 1.0,
+    "insidethepirateship": 0.0
+  },
+  {
+    "bm": 60.0,
+    "hthum": 45.0,
+    "erika": 30.0
+  },
+  {
+    "insidethepirateship": 60.0,
+    "bean": 45.0,
+    "paige": 30.0
+  },
+  {
+    "thatoneguy": 60.0,
+    "wyatt": 30.0,
+    "dahlia": 45.0
+  },
+  {
+    "ashton": 60.0,
+    "calvin w": 45.0,
+    "natalie": 30.0
+  },
+  {
+    "dahlia": 15.0,
+    "ashton": 45.0,
+    "bm": 30.0,
+    "bean": 60.0
+  },
+  {
+    "hthum": 45.0,
+    "calvin w": 30.0,
+    "insidethepirateship": 60.0,
+    "thatoneguy": 15.0
+  },
+  {
+    "hthum": 0.0,
+    "bean": 1.0
+  },
+  {
+    "ashton": 0.0,
+    "insidethepirateship": 1.0
+  },
+  {
+    "insidethepirateship": 1.0,
+    "bean": 0.0
+  },
+  {
+    "hannahlull": 40.0,
+    "alyssa": 4.0,
+    "tilford": 28.0,
+    "hthum": 60.0
+  },
+  {
+    "camden": 8.0,
+    "jordan": 60.0,
+    "sasa7198": 48.0
+  },
+  {
+    "chase": 28.0,
+    "nick": 60.0,
+    "y it": 4.0
+  },
+  {
+    "graysun": 40.0,
+    "lyme": 60.0,
+    "sophia ": 16.0,
+    "bm": 48.0
+  },
+  {
+    "riiillleeey": 48.0,
+    "shay": 40.0,
+    "insidethepirateship": 60.0,
+    "lia": 28.0
+  },
+  {
+    "isaac": 60.0,
+    "devlyn": 40.0,
+    "bean": 48.0,
+    "jesse": 4.0
+  },
+  {
+    "shay": 1.0,
+    "jordan": 0.0
+  },
+  {
+    "chase": 0.0,
+    "hthum": 1.0
+  },
+  {
+    "riiillleeey": 0.0,
+    "bm": 1.0
+  },
+  {
+    "graysun": 0.0,
+    "insidethepirateship": 1.0
+  },
+  {
+    "lyme": 1.0,
+    "bean": 0.0
+  },
+  {
+    "nick": 1.0,
+    "devlyn": 0.0
+  },
+  {
+    "sasa7198": 1.0,
+    "hannahlull": 0.0
+  },
+  {
+    "hthum": 1.0,
+    "shay": 0.0
+  },
+  {
+    "isaac": 1.0,
+    "bm": 0.0
+  },
+  {
+    "lyme": 0.0,
+    "insidethepirateship": 1.0
+  },
+  {
+    "sasa7198": 0.0,
+    "nick": 1.0
+  },
+  {
+    "hthum": 0.0,
+    "isaac": 1.0
+  },
+  {
+    "nick": 0.0,
+    "insidethepirateship": 1.0
+  },
+  {
+    "isaac": 0.0,
+    "insidethepirateship": 1.0
+  },
+  {
+    "aren": 20.0,
+    "mac": 48.0,
+    "bm": 60.0
+  },
+  {
+    "caleb a": 48.0,
+    "emerson": 36.0,
+    "jordan": 60.0
+  },
+  {
+    "connor": 60.0,
+    "dahlia": 32.0,
+    "hthum": 48.0,
+    "erika": 28.0
+  },
+  {
+    "insidethepirateship": 60.0,
+    "heather": 4.0,
+    "christopher": 32.0,
+    "isaac": 48.0
+  },
+  {
+    "bodie": 48.0,
+    "wei": 28.0,
+    "bailey": 24.0,
+    "shay": 60.0
+  },
+  {
+    "nelson": 36.0,
+    "stafani": 4.0,
+    "nick": 60.0,
+    "natalie": 20.0
+  },
+  {
+    "christopher": 0.0,
+    "jordan": 1.0
+  },
+  {
+    "hthum": 1.0,
+    "bm": 0.0
+  },
+  {
+    "emerson": 0.0,
+    "nick": 1.0
+  },
+  {
+    "wei": 0.0,
+    "erika": 1.0
+  },
+  {
+    "isaac": 1.0,
+    "bodie": 0.0
+  },
+  {
+    "shay": 0.0,
+    "dahlia": 1.0
+  },
+  {
+    "insidethepirateship": 1.0,
+    "nelson": 0.0
+  },
+  {
+    "erika": 0.0,
+    "connor": 1.0
+  },
+  {
+    "mac": 0.0,
+    "caleb a": 1.0
+  },
+  {
+    "jordan": 0.0,
+    "hthum": 1.0
+  },
+  {
+    "nick": 0.0,
+    "isaac": 1.0
+  },
+  {
+    "insidethepirateship": 1.0,
+    "dahlia": 0.0
+  },
+  {
+    "caleb a": 0.0,
+    "connor": 1.0
+  },
+  {
+    "thatoneguy": 40.0,
+    "nick": 48.0,
+    "dahlia": 36.0,
+    "caleb a": 60.0
+  },
+  {
+    "isaac": 1.0,
+    "hthum": 0.0
+  },
+  {
+    "caleb a": 0.0,
+    "insidethepirateship": 1.0
+  },
+  {
+    "insidethepirateship": 0.0,
+    "isaac": 1.0
+  },
+	
+	
+	
+  {
+    "mac": 1.0,
+    "andrew": 0.0
+  },
+  {
+    "bean": 0.0,
+    "riiillleeey": 1.0
+  },
+  {
+    "bm": 1.0,
+    "tilford": 0.0
+  },
+  {
+    "lyme": 0.0,
+    "jordan": 1.0
+  },
+  {
+    "sasa7198": 1.0,
+    "connork": 0.0
+  },
+  {
+    "lilym": 1.0,
+    "lily": 0.0
+  },
+  {
+    "mac": 0.0,
+    "insidethepirateship": 1.0
+  },
+  {
+    "riiillleeey": 0.0,
+    "bm": 1.0
+  },
+  {
+    "jordan": 1.0,
+    "hthum": 0.0
+  },
+  {
+    "lilym": 0.0,
+    "sasa7198": 1.0
+  },
+  {
+    "tilford": 0.0,
+    "bean": 1.0
+  },
+  {
+    "connork": 1.0,
+    "lily": 0.0
+  },
+  {
+    "andrew": 0.0,
+    "lilym": 1.0
+  },
+  {
+    "bean": 0.0,
+    "hthum": 1.0
+  },
+  {
+    "lyme": 0.0,
+    "riiillleeey": 1.0
+  },
+  {
+    "mac": 0.0,
+    "connork": 1.0
+  },
+  {
+    "lilym": 0.0,
+    "hthum": 1.0
+  },
+  {
+    "connork": 1.0,
+    "riiillleeey": 0.0
+  },
+  {
+    "bm": 0.0,
+    "insidethepirateship": 1.0
+  },
+  {
+    "sasa7198": 0.0,
+    "jordan": 1.0
+  },
+  {
+    "bm": 0.0,
+    "hthum": 1.0
+  },
+  {
+    "connork": 1.0,
+    "sasa7198": 0.0
+  },
+  {
+    "hthum": 1.0,
+    "connork": 0.0
+  },
+  {
+    "jordan": 1.0,
+    "insidethepirateship": 0.0
+  },
+  {
+    "hthum": 0.0,
+    "insidethepirateship": 1.0
+  },
+  {
+    "jordan": 1.0,
+    "insidethepirateship": 0.0
+  }
 ]
